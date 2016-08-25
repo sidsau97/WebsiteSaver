@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DatabaseOnList</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_show_contact">ShowContact</string>
+    <string name="title_activity_del_item">DelItem</string>
+
+    <string name="btn_edit_website_create">Create</string>
+    <string name="btn_edit_website_update">Update</string>
+
+    <string name="website_name">Name</string>
+    <string name="website_username">Username</string>
+    <string name="website_email">Email</string>
+    <string name="website_password">Password</string>
+    <string name="website_comment">Comment</string>
+    <string name="required">is required</string>
+</resources>
