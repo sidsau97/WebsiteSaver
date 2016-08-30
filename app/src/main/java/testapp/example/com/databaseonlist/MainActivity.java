@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
         });
 
         websites = db.getAllWebsites();
-
         listView = (ListView) findViewById(R.id.websiteListView);
         websiteListAdapter = new WebsiteListAdapter(this, websites);
         listView.setAdapter(websiteListAdapter);
@@ -67,6 +66,11 @@ public class MainActivity extends Activity {
             }
         });
     }
+    /*
+    http://stackoverflow.com/questions/19322968/neither-onactivityresult-nor-notifydatasetchanged-work
+    Hieruit heb ik gevonden hoe ik de listview moet refreshen als er iets veranderd is in de database
+    Via het doorgeven van een requestode.
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 1 || requestCode == 2 || requestCode == 3){

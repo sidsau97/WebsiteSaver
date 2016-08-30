@@ -4,7 +4,10 @@ package testapp.example.com.databaseonlist;
  * Created by roeland on 16-6-2016.
  */
 
-
+/*
+http://stackoverflow.com/questions/8166497/custom-adapter-for-list-view
+Hieruit heb ik info gehaald om in elk element van de listview 2 textviews te zetten en een button
+ */
 import java.util.List;
 
 import android.content.Context;

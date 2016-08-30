@@ -40,6 +40,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onClickRegister(View v){
         switch (v.getId()) {
             case R.id.tvRegisterLink:
+                /*
+                http://stackoverflow.com/questions/23024831/android-shared-preferences-example
+                Uit deze link heb ik gevonden hoe je data moet doorsturen naar een volgende activity via shared preferences
+                 */
                 SharedPreferences sharedPreferences = getSharedPreferences("myData", Context.MODE_PRIVATE);
                 boolean registered = sharedPreferences.getBoolean("registered", false);
                 Intent intent = new Intent(LoginActivity.this, Register.class);

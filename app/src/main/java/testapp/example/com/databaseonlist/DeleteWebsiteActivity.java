@@ -19,7 +19,10 @@ public class DeleteWebsiteActivity extends Activity {
         setContentView(R.layout.activity_del_item);
         tvDelItem1 =(TextView) findViewById(R.id.tvDelItem);
 
-
+        /*
+        https://developer.android.com/reference/android/util/DisplayMetrics.html
+        hiervan heb ik de displaymetric methode gehaald. voor het pop-up venster
+         */
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;

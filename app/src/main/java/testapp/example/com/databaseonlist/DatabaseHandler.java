@@ -14,6 +14,14 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by roeland on 15-6-2016.
  */
 
+/*
+http://www.techotopia.com/index.php/An_Android_Studio_SQLite_Database_Tutorial
+In deze tutorial heb ik geleerd hoe ik een standaard sqlite database maak,
+deze heb ik aangepast voor mijn eigen database.
+Ik heb niet gewerkt met de standaard functies zoals db.insert,...
+maar heb zelf de querries geschreven.
+*/
+
 public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
